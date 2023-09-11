@@ -1,7 +1,7 @@
 <div class="row">
 	<div class="col-sm-3">
         <div class="alert bg-green">
-            <h4>Kelas<i class="pull-right fa fa-building-o"></i></h4>
+            <h4>Ruangan<i class="pull-right fa fa-building-o"></i></h4>
             <span class="d-block"> <?=$mhs->nama_kelas?></span>                
         </div>
     </div>
@@ -45,8 +45,8 @@
                     <tr>
                         <th>No.</th>
                         <th>Nama Ujian</th>
-                        <th>Mata Kuliah</th>
-						<th>Dosen</th>
+                        <th>Jenis Ujian</th>
+						<th>Pengawas</th>
                         <th>Jumlah Soal</th>
                         <th>Waktu</th>
                         <th class="text-center">Aksi</th>
@@ -56,8 +56,8 @@
                     <tr>
                         <th>No.</th>
                         <th>Nama Ujian</th>
-                        <th>Mata Kuliah</th>
-						<th>Dosen</th>
+                        <th>Jenis Ujian</th>
+						<th>Pengawas</th>
                         <th>Jumlah Soal</th>
                         <th>Waktu</th>
                         <th class="text-center">Aksi</th>

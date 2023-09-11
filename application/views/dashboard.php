@@ -117,7 +117,7 @@
                 <h3 class="box-title">Pemberitahuan</h3>
             </div>
             <div class="box-body">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem in animi quibusdam nihil esse ratione, nulla sint enim natus, aut mollitia quas veniam, tempore quia!</p>
+                <p>Pemberitahuan Penting Sebelum Ujian CBT </p>
                 <ul class="pl-4">
                     <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur, culpa.</li>
                     <li>Provident dolores doloribus, fugit aperiam alias tempora saepe non omnis.</li>

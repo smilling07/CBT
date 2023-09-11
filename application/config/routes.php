@@ -54,3 +54,7 @@ $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 $route['login'] = 'Auth/index';
 $route['logout'] = 'Auth/logout';
+$route['soal/buat_uraian'] = 'SoalController/buat_uraian';
+$route['soal/simpan_uraian'] = 'SoalController/simpan_uraian';
+$route['buat_uraian'] = 'soal/buat_uraian';
+
