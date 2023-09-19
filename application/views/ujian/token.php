@@ -1,3 +1,10 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Tambahkan link ke file CSS yang diperlukan di sini -->
+    <!-- Tambahkan library jQuery jika dibutuhkan -->
+</head>
+<body>
 <div class="callout callout-info">
     <h4>Peraturan Ujian!</h4>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime minus dolores accusantium fugiat debitis modi voluptates non consequuntur nemo expedita nihil laudantium commodi voluptatum voluptatem molestiae consectetur incidunt animi, qui exercitationem? Nisi illo, magnam perferendis commodi consequuntur impedit, et nihil excepturi quas iste cum sunt debitis odio beatae placeat nemo..</p>
@@ -90,4 +97,36 @@
     </div>
 </div>
 
-<script src="<?=base_url()?>assets/dist/js/app/ujian/token.js"></script>
+<!-- Tambahkan elemen untuk menampilkan tampilan kamera -->
+<div id="camera-container" style="display: none;">
+    <video id="camera-feed" autoplay></video>
+</div>
+
+<script>
+// Ambil elemen-elemen DOM yang diperlukan
+const cameraContainer = document.getElementById('camera-container');
+const cameraFeed = document.getElementById('camera-feed');
+const tokenInput = document.getElementById('token');
+
+// Fungsi untuk mengaktifkan kamera
+async function startCamera() {
+    try {
+        const stream = await navigator.mediaDevices.getUserMedia({ video: true });
+        cameraFeed.srcObject = stream;
+        cameraContainer.style.display = 'block'; // Tampilkan tampilan kamera
+    } catch (error) {
+        console.error('Gagal mengaktifkan kamera:', error);
+    }
+}
+
+// Event listener untuk perubahan pada input token
+tokenInput.addEventListener('input', function () {
+    if (tokenInput.value.trim() !== '') {
+        startCamera();
+    }
+});
+</script>
+
+<!-- Tambahkan link ke file JavaScript lainnya jika diperlukan -->
+</body>
+</html>
